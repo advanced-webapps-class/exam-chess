@@ -34,3 +34,12 @@ wrap.innerHTML = str;
 
 // DOM에 클릭 이벤트 할당
 
+var boards = document.querySelectorAll('.wrap > div');
+
+function selectBoard() {
+  console.log('selected');
+}
+
+for(var i=0; i<boards.length; i++){
+  boards[i].addEventListener('click', selectBoard);
+}
