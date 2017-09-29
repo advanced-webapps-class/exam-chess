@@ -23,6 +23,10 @@ for(var i=0; i < 16; i++){
   //한번씩 변경
   isWhite = !isWhite;
 
+  if(i % 4 === 3 ){
+    isWhite = !isWhite;
+  }
+
 }
 
 wrap.innerHTML = str;
