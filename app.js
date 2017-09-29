@@ -45,6 +45,11 @@ function selectBoard(event) {
   var board = event.currentTarget;
   console.log(board)
 
+  if(selectedDom){
+    selectedDom.className =  selectedDom.className.replace(' select', '');
+  }
+
+
   board.className += ' select';
 
   selectedDom = board;
