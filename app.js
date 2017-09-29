@@ -43,6 +43,7 @@ function selectBoard(event) {
   var board = event.currentTarget;
   console.log(board)
 
+  board.className += ' select';
 
 }
 
