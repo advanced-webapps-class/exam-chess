@@ -36,8 +36,14 @@ wrap.innerHTML = str;
 
 var boards = document.querySelectorAll('.wrap > div');
 
-function selectBoard() {
+
+function selectBoard(event) {
   console.log('selected');
+
+  var board = event.currentTarget;
+  console.log(board)
+
+
 }
 
 for(var i=0; i<boards.length; i++){
